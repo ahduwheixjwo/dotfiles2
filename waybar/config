@@ -1,0 +1,68 @@
+{
+    "layer": "top",
+    "margin-top": 5,
+    "margin-right": 10,
+    "margin-left": 10,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "network", "cpu", "backlight", "pulseaudio", "battery"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "wlr/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+        "sort-by-numbers": true,
+    },
+    "cpu": {
+        "interval": 1,
+        "format": "  {usage}%"
+    },
+    "battery": {
+        "format": "{icon}  {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "interval": 60,
+        "format": "  {:%I:%M %p}",
+        "max-length": 25
+    },
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "",
+        "format-bluetooth": " {volume}%",
+        "on-click-right": "pactl set-sink-mute `pactl get-default-sink` 1",
+        "on-click-middle": "pactl set-sink-mute `pactl get-default-sink` 0",
+        "format-icons": {
+            "headphone": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-click": "pavucontrol",
+        "scroll-step": 1
+    },
+    "network": {
+        "format-wifi": "   {essid}"
+    },
+    "backlight": {
+        "format": "  {percent}%",
+        "scroll-step": 1
+    },
+}

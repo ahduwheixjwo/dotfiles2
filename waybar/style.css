@@ -1,0 +1,70 @@
+* {
+  font-family: "Iosevka Nerd Font";
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+window#waybar {
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: 0.1s;
+}
+
+#clock {
+  color: #f2cdcd;
+}
+
+#battery {
+  color: #a6e3a1;
+}
+
+#pulseaudio {
+  color: #f38ba8;
+}
+
+#network {
+  color: #89b4fa;
+}
+
+#backlight {
+  color: #f9e2af;
+}
+
+#cpu {
+  color: #cba6f7;
+}
+
+#cpu, #tray, #workspaces, #network, #backlight, #battery, #clock, #pulseaudio {
+  border-radius: 8px 8px;
+  background-color: #1E1D2F;
+  padding: 0em 2em;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 13px;
+}
+
+#tray, #cpu,  #network, #backlight, #pulseaudio {
+  margin-right: 7px;
+}
+
+#workspaces button {
+  color: #cdd6f4;
+}
+
+#workspaces button.focused {
+  border: solid 2px;
+  border-color: #1E1D2F #1E1D2F #96CDFB #1E1D2F;
+}
+
+#workspaces button:hover {
+  color: #1e1e2e;
+  background-color: #cdd6f4;
+}
+
+#workspaces button.urgent {
+    color: #cdd6f4;
+    background-color: #f38ba8;
+}
+
