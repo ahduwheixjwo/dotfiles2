@@ -5,7 +5,7 @@ sudo pacman -Syu
 sudo pacman -S lib32-libpulse libpulse pipewire-pulse pipewire-alsa
 
 # Sway related packages
-sudo pacman -S sway swaybg sway-screenshot acpi brightnessctl 
+sudo pacman -S sway swaybg waybar acpi brightnessctl rofi 
 
 # Bluetooth
 sudo pacman -S bluez bluez-libs bluez-utils
@@ -14,4 +14,4 @@ sudo pacman -S bluez bluez-libs bluez-utils
 sudo pacman -S gamemode lib32-gamemode mangohud gamescope
 
 # Intel Driver
-sudo pacman -S mesa lib32-mesa mesa-utils vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader 
+sudo pacman -S mesa lib32-mesa mesa-utils vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader intel-media-driver 
