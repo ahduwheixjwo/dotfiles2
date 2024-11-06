@@ -15,3 +15,6 @@ sudo pacman -S gamemode lib32-gamemode mangohud gamescope
 
 # Intel Driver
 sudo pacman -S mesa lib32-mesa mesa-utils vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader intel-media-driver 
+
+# Optional Packages
+sudo pacman -S kitty pavu p7zip zsh thunar
