@@ -6,6 +6,7 @@
 - Terminal: [Kitty](https://github.com/kovidgoyal/kitty)
 - Themes: [Catppuccin Mocha Standard Sky Dark](https://www.gnome-look.org/p/1715554/)
 - Icons: [Papirus](https://www.gnome-look.org/p/1166289/)
+- Login Manager: [tuigreet](https://github.com/apognu/tuigreet)
 
 ## Installation & Usage
 1. Install required packages ex: sway, waybar, etc...
