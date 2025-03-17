@@ -1,8 +1,9 @@
 # Update system
 sudo pacman -Syu
 
-# Audio packages
-sudo pacman -S lib32-libpulse libpulse pipewire-pulse pipewire-alsa
+# Audio packages ( Uncomment which audio server you want to use )
+#sudo pacman -S lib32-libpulse libpulse pipewire-pulse pipewire-alsa alsa-utils pavucontrol
+sudo pacman -S lib32-libpulse libpulse pulseaudio pulseaudio-alsa pulseaudio-jack pulseaudio-bluetooth alsa-utils pavucontrol
 
 # Sway related packages
 sudo pacman -S sway swaybg waybar acpi brightnessctl rofi 
